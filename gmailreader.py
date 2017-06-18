@@ -23,7 +23,7 @@ class GmailReader:
     def select_mailbox(self,label):
         status, response = self.imap_object.select(label)
         if 'OK' in status:
-            print("{} selected!".format(label)
+            print("{} selected!".format(label))
             return True
         else:
             print("Failed to select {} !".format(label))
@@ -74,5 +74,5 @@ if __name__ =="__main__":
                         print()
         mygmail.close()
     else:
-        print("usage : python3 {} email_id ".format(sys.argv[0]))
+        print("usage : python3 {} abc@gmail.com".format(sys.argv[0]))
         sys.exit()
