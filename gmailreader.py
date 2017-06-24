@@ -72,7 +72,7 @@ if __name__ =="__main__":
                     for mail in emails:
                         print(mail)
                         print()
-        mygmail.close()
+            mygmail.close()
     else:
         print("usage : python3 {} abc@gmail.com".format(sys.argv[0]))
         sys.exit()
